@@ -81,6 +81,7 @@ database="product_search"
 
 #### 5. Run Command For Search Products
 ```bash
+python embed_products.py
 python lambda_handler.py
 ```
 
