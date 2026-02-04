@@ -83,6 +83,7 @@ database="product_search"
 ```bash
 python embed_products.py
 python lambda_handler.py
+After search your products type "exit" it will stop from the search
 ```
 
 ---
