@@ -30,6 +30,9 @@ def generate_embeddings(products):
     for p, v in zip(products, vectors):
         p["vector"] = v.tolist()
 
+    with open("tfidf_vectorizer.pkl", "wb") as f:
+        pickle.dump(vectorizer, f)
+
     return products
 
 def insert_to_db(products):
